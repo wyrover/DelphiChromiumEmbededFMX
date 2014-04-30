@@ -1,0 +1,55 @@
+object Form6: TForm6
+  Left = 0
+  Top = 0
+  Caption = 'Form6'
+  ClientHeight = 480
+  ClientWidth = 640
+  WindowState = wsMaximized
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop, dkiPhone, dkiPad]
+  DesignerMobile = False
+  DesignerWidth = 0
+  DesignerHeight = 0
+  DesignerDeviceName = ''
+  DesignerOrientation = 0
+  DesignerOSVersion = ''
+  object Panel1: TPanel
+    Anchors = [akLeft, akTop, akRight, akBottom]
+    Height = 433.000000000000000000
+    Position.X = 8.000000000000000000
+    Position.Y = 40.000000000000000000
+    Width = 625.000000000000000000
+    TabOrder = 0
+    object ChromiumFMX1: TChromiumFMX
+      Align = alClient
+      TabOrder = 0
+    end
+  end
+  object Button1: TButton
+    Height = 25.000000000000000000
+    Position.X = 528.000000000000000000
+    Position.Y = 8.000000000000000000
+    TabOrder = 1
+    Text = 'Navigate'
+    Width = 105.000000000000000000
+    OnClick = Button1Click
+  end
+  object Edit1: TEdit
+    Touch.InteractiveGestures = [igLongTap, igDoubleTap]
+    TabOrder = 2
+    Text = 'http://www.google.com'
+    Position.X = 40.000000000000000000
+    Position.Y = 8.000000000000000000
+    Width = 465.000000000000000000
+    Height = 25.000000000000000000
+    KillFocusByReturn = False
+  end
+  object Label1: TLabel
+    Height = 17.000000000000000000
+    Position.X = 8.000000000000000000
+    Position.Y = 12.000000000000000000
+    Text = 'Url : '
+    Width = 41.000000000000000000
+  end
+end
